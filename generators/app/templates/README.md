@@ -3,7 +3,7 @@
 # generator-wv 脚手架
 命名：wv ---> webpack+vue
 
-> generator-lg
+> generator-wv
 
 ## Installation
 
@@ -19,7 +19,7 @@ Then generate your new project:
 ```bash
 yo wv
 ```
-目录生成成功后，请阅读：[README.md](https://github.com/huarxia/generator-wv/README.md)
+目录生成成功后，请阅读：[README.md](https://github.com/huarxia/generator-wv/blob/master/README.md)
 
 项目架子初始化完成（注意：这时只有index示例页面）,目录结构如下：
 
