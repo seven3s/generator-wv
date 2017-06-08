@@ -1,0 +1,27 @@
+{
+  "name": "generator-wv",
+  "version": "1.0.0",
+  "description": "generator-wv",
+  "homepage": "https://github.com/huarxia/generator-wv",
+  "author": {
+    "name": "花夏",
+    "email": "liubiao@itoxs.com",
+    "url": "fex.onlove.cc"
+  },
+  "files": [
+    "generators/app",
+    "h"
+  ],
+  "main": "generators/app/index.js",
+  "keywords": [
+    "generator-wv",
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^1.1.3",
+    "git-config": "0.0.7",
+    "yeoman-generator": "^0.20.3"
+  },
+  "repository": "https://github.com/huarxia/generator-wv",
+  "license": "MIT"
+}
