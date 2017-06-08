@@ -60,7 +60,7 @@ module.exports = generators.Base.extend({
                 } else {
                     console.log(chalk.red('\n\nplease run "npm install" before gulp\n'));
                     console.log(chalk.green('\ndone!\n'));
-                    console.log(chalk.green('\n进入根目录运行：gulp  or   gulp server\n'));
+                    console.log(chalk.green('\n进入目录运行：npm run dev\n'));
                 }
                 cb();
             }.bind(this));
