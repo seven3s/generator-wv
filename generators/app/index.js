@@ -41,7 +41,7 @@ module.exports = generators.Base.extend({
             this.prompt([
                 {
                     'name'   : 'npm_install',
-                    'message': 'Install node_modules for gulp now?',
+                    'message': 'Install node_modules for npm run dev now?',
                     'default': 'N/y',
                     'warning': ''
                 }
