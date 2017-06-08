@@ -51,6 +51,13 @@ yo wv
             ├──GET // 本地mock get
             └──POST // 本地mock post
 
+## 支持功能
+
+    1.本地mock： 更改config/index.js : mockLocal: 1, // 1為本地 \ 0為代理 remote中可配置代理地址
+    2.自动获取本地局域方地址（192.*.*.*）方便局域网查看
+    3.自动获取端口号(默认8888)，不再为端口号占用烦恼，提高效率
+    4.运行 `npm run dev`后自动代开浏览器，不必手动打开，提高效率 更改config/index.js : browser: 'google chrome', // 可配置 firefox \ google chrome \ Safari
+
 ## 感谢这些开源项目
 
 1. [yeoman](http://yeomanjs.org/)
