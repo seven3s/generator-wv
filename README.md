@@ -23,7 +23,7 @@ yo wv
 
 项目架子初始化完成（注意：这时只有index示例页面）,目录结构如下：
 
-    lg-vue
+    wv
     ├── .gitignore  // 忽略git提交文件
     ├── README.md  // 项目说明
     ├── .babelrc  // babel编译配置
