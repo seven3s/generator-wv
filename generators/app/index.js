@@ -83,7 +83,7 @@ module.exports = generators.Base.extend({
         }, {
             'name'   : 'version',
             'message': 'Version:',
-            'default': '0.1.0',
+            'default': '1.0.0',
             'warning': ''
         }, {
             'name'   : 'author',
