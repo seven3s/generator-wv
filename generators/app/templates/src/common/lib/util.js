@@ -64,6 +64,55 @@ var obj = {
             reg = e ? null : null;
         }
         return reg;
+    },
+
+    /**
+     * deepCloneObject 深克隆一个对象
+     *
+     * @param  {Object} obj 需要克隆的对象
+     *
+     * @return {Object}     返回克隆完成的对象
+     */
+    deepCloneObject: function(obj) {
+        let result;
+        let oClass = this.isClass(obj);
+        // 确定result的类型
+        if(oClass === "Object"){
+            result = {};
+        }else if(oClass === "Array"){
+            result = [];
+        }else{
+            return obj;
+        }
+        for(key in obj){
+            let copy = obj[key];
+            if(isClass(copy) === 'Object'){
+                // 递归调用
+                result[key] = arguments.callee(copy);
+            }else if(isClass(copy) === 'Array'){
+                result[key] = arguments.callee(copy);
+            }else{
+                result[key] = obj[key];
+            }
+        }
+        return result;
+    },
+
+    /**
+     * isClass 根据传入的数据返回实际类型
+     *
+     * @param  {Object}    obj 传入的对象
+     *
+     * @return {String}     返回对象的数据类型
+     */
+    isClass: function(obj) {
+        if(o === null) {
+            return 'Null';
+        }
+        if(o === undefined) {
+            return 'Undefined';
+        }
+        return Object.prototype.toString.call(obj).slice(8, -1);
     }
 };
 
