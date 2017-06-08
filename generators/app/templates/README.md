@@ -73,5 +73,5 @@ yo wv
 
 ## License
 
-MIT © [花夏](fex.onlove.cc)
+MIT © [花夏](http://www.huar.love)
 
