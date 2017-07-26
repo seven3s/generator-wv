@@ -1,12 +1,12 @@
 {
   "name": "generator-wv",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "generator-wv",
   "homepage": "https://github.com/huarxia/generator-wv",
   "author": {
     "name": "花夏",
     "email": "liubiao@itoxs.com",
-    "url": "fex.onlove.cc"
+    "url": "www.haur.love"
   },
   "files": [
     "generators/app",
