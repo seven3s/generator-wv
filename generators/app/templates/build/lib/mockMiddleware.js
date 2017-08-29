@@ -29,6 +29,8 @@ module.exports = {
             var json   = JSON.parse(fs.readFileSync(url, 'utf-8'));
             // var Mock = require('mockjs');
             // var data = Mock.mock(json);
+            // 解决返回中文乱码
+            res.setHeader('Content-Type', 'application/json;charset=utf-8');
             data = JSON.stringify(json, null, 4);
             res.write(data);
             res.end();
