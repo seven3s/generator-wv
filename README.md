@@ -1,5 +1,12 @@
 # generator-wv
 
+
+[![GitHub issues](https://img.shields.io/github/issues/huarxia/generator-wv.svg)](https://github.com/huarxia/generator-wv/issues)
+[![GitHub forks](https://img.shields.io/github/forks/huarxia/generator-wv.svg)](https://github.com/huarxia/generator-wv/network)
+[![GitHub stars](https://img.shields.io/github/stars/huarxia/generator-wv.svg)](https://github.com/huarxia/generator-wv/stargazers)
+[![GitHub license](https://img.shields.io/github/license/huarxia/generator-wv.svg)](https://github.com/huarxia/generator-wv/blob/master/LICENSE)
+
+
 # generator-wv 脚手架
 命名：wv ---> webpack+vue
 
@@ -75,4 +82,3 @@ yo wv
 ## License
 
 MIT © [花夏](http://www.huar.love)
-

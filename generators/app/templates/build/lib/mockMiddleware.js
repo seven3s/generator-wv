@@ -48,12 +48,21 @@ module.exports = {
         var XML = req.headers['x-requested-with'];
         // 如果是XMLHttpRequest則走代理，否則走本地
         if (XML && /XMLHttpRequest/.test(XML)) {
-            var proxy = httpProxy.createProxyServer({
-                target: base
+            // var proxy = httpProxy.createProxyServer({
+            //     target: base
+            // });
+            var proxy = httpProxy.createProxyServer({});
+            proxy.on('error', function (err, req, res) {
+                res.end('Something went wrong. And we are reporting a custom error message.');
             });
             console.log(chalk.yellow('proxy- URL:') + chalk.green(base + req.url));
-            req.headers = _.assign(req.headers, config.dev.remote.headers);
-            proxy.web(req, res);
+            req.headers = _.assign(req.headers, config.dev.headers);
+            // proxy.web(req, res);
+            var location = url.parse(req.url);
+            proxy.web(req, res, {
+                target: base,
+                hots: 'eth.sitenav.net'
+            });
         }else {
             next();
         }
