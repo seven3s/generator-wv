@@ -1,6 +1,6 @@
 /**
  * @file:      mock服务逻辑判断
- * @author:    花夏(bliu@huikedu.com)
+ * @author:    花夏(liubiao@itoxs.com)
  * @version:   V0.0.1
  * @date:      2017-03-22 18:27:02
  */
